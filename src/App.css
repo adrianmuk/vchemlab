@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: black;
+  height: 100%;
 }
 
 .App-logo {
@@ -35,4 +37,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.sidebarsidebar{
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  background-color: #61dafb;
+}
+
+.topbar{
+  margin-top: -22px;
+}
+
+.workspaceclass{
+  margin-left: 200px;
+  margin-top: 0px;
+  height: 100%;
+  background-color: rosybrown;
 }

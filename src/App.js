@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidenav from './Components/Sidenav';
+import ResponsiveAppBar from './Components/ResponsiveAppBar';
+//import Testubecompo from './Components/Testubecompo';
+import Workspace from './Components/Workspace';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">.
+      <ResponsiveAppBar></ResponsiveAppBar>
+      <Sidenav></Sidenav>  
+      <Workspace></Workspace>
+        
+      
+
+    
     </div>
   );
 }
