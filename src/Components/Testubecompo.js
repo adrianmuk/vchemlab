@@ -1,5 +1,5 @@
 import * as React from "react"
-
+//import {View} from 'react';
 import {String} from 'prop-types';
 export default class Testubecompo extends React.Component{
   render(){
@@ -288,8 +288,8 @@ Testubecompo.propTypes= {
 };
 
 Testubecompo.defaultProps ={
-  colortop:'Blue',
-  colormiddle: 'Blue',
-  colorbottom: 'Blue',
+  colortop:'rgb(126, 126, 126)',
+  colormiddle: 'rgb(126, 126, 126)',
+  colorbottom: 'rgb(126, 126, 126)',
 }
 

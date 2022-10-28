@@ -54,6 +54,12 @@
 .workspaceclass{
   margin-left: 200px;
   margin-top: 0px;
-  height: 100%;
-  background-color: rosybrown;
+  height: auto;
+  width: auto;
+  background-color: rgb(126, 126, 126);
+}
+
+.draggableclass{
+  height: 160mm;
+  width: 50mm;
 }
