@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import './App.css';
 import Sidenav from './Components/Sidenav';
 import ResponsiveAppBar from './Components/ResponsiveAppBar';
@@ -6,7 +7,9 @@ import Workspace from './Components/Workspace';
 
 import chemlabgif from './Assets/chemlab.gif';
 
-function App() {
+
+class Simulator extends Component {
+  render() {
   return (
     <div className="App">.
       <ResponsiveAppBar></ResponsiveAppBar>
@@ -19,5 +22,6 @@ function App() {
     </div>
   );
 }
+}
 
-export default App;
+export default Simulator;
