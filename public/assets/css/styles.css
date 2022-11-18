@@ -1102,7 +1102,9 @@ a:hover {
 	.header .text-container {
 		margin-top: 4rem;
 	}
-
+	.header .text-container .h1-large{
+		margin-top: -120px;
+	}
 	.header .image-container {
 		margin-top: 0;
 	}

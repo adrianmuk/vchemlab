@@ -1,13 +1,20 @@
 import './App.css';
-import { BrowserRouter, Link, Router} from 'react-router-dom';
-import Simulator from './Simulator';
+import React from 'react';
+import { Route, Routes, Link } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import Simulator from "./Simulator";
 
 
 function App() {
   return (
     
   <div className="App">
-      
+
+    <Routes>
+        <Route path="/Simulator" element={<Simulator></Simulator>} />
+    </Routes>
+
+    
    
        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
             <div class="container">
@@ -54,19 +61,11 @@ function App() {
                 <div class="row">
                     <div class="col-lg-6 col-xl-5">
                         <div class="text-container">
-                            <h1 class="h1-large">Find influencers for your products</h1>
-                            <p class="p-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, neque ut ultrices sollicitudin</p>
-                            <Router>
-                                <Link to="/Simulator">
-                                    <button class="btn-solid-lg">
-                                        Offered Services
-                                    </button>
-                                </Link>
-                            </Router>
-                            <a class="btn-solid-lg">Offered services</a>
-                            
-
+                            <h1 class="h1-large">Experiment on the go.</h1>
+                            <p class="p-large">Simulate chemistry experiments, Visualize chemical processes, bonding, thermo-dynamics, electronic configurations, molecular structure, retrieve properties of chemical elements and balance chemical equations.</p>
+                            <Link to="/Simulator" class="btn-solid-lg" >Try it now</Link>
                         </div>
+                        
                     </div> 
                     <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
@@ -501,6 +500,7 @@ function App() {
         </button>
       
     </div>
+    
 );
 }
 export default App;
