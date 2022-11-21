@@ -8,20 +8,17 @@ import Workspace from './Components/Workspace';
 import chemlabgif from './Assets/chemlab.gif';
 
 
-class Simulator extends Component {
-  render() {
+function Simulator (){
   return (
-    <div className="App">.
+    
+    <div className="App">
       <ResponsiveAppBar></ResponsiveAppBar>
       <Sidenav></Sidenav>  
       <Workspace></Workspace>
-        
-      
-
-    
-    </div>
+    </div>   
+     
   );
 }
-}
 
-export default Simulator;
+
+ export default Simulator;
