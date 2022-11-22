@@ -728,6 +728,81 @@ a:hover {
 }
 
 
+
+
+
+
+
+
+
+
+/************************/
+/*     Pricing     */
+/************************/
+.cardprice-2 {
+	padding-top: 9.5rem;
+	padding-bottom: 2.25rem;
+	text-align: center;
+}
+
+.cardprice-2 .h2-heading {
+	margin-bottom: 3.75rem;
+}
+
+.cardprice-2 .card {
+	position: relative;
+	margin-bottom: 5rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cardprice-2 .card .quotes {
+	position: absolute;
+	top: -15px;
+	right: 0;
+	left: 0;
+	width: 48px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.cardprice-2 .card-body {
+	padding: 3.5rem 2rem 3.125rem 2rem;
+}
+
+.cardprice-2 .testimonial-author {
+	margin-bottom: 0.125rem;
+	color: #223150;
+}
+
+.cardprice-2 .occupation {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+.cardprice-2 .card .gradient-floor {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.cardprice-2 .card .gradient-floor.red-to-blue {
+	background: linear-gradient(to right, #ef3d91, #0092ff);
+}
+
+.cardprice-2 .card .gradient-floor.blue-to-purple {
+	background: linear-gradient(to right, #0092ff, #637eff);
+}
+
+.cardprice-2 .card .gradient-floor.purple-to-green {
+	background: linear-gradient(to right, #637eff, #16c66d);
+}
+
+
 /********************/
 /*    Customers     */
 /********************/
@@ -825,9 +900,10 @@ a:hover {
 /******************/
 .footer {
 	position: relative;
-	padding-top: 7.5rem;
-	padding-bottom: 6rem;
+	/*padding-top: -7.5rem;*/
+	padding-bottom: 0px;
 	text-align: center;
+	background-color: #bbeaf6;
 }
 
 .footer .decoration-circles {
@@ -848,12 +924,12 @@ a:hover {
 }
 
 .footer h4 {
-	margin-bottom: 1.875rem;
+	margin-bottom: 2rem;
 }
 
 .footer .fa-stack {
 	width: 2em;
-	margin-bottom: 1.25rem;
+	margin-bottom: 2rem;
 	margin-right: 0.375rem;
 	font-size: 1.5rem;
 }

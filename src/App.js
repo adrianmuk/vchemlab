@@ -75,7 +75,11 @@ function App() {
           </header> 
 
 
-      
+
+
+
+
+{/* *********************************************features *************************************************/}      
           <div class="cards-2 bg-gray" id="features">
               <div class="container">
                   <div class="row">
@@ -161,13 +165,7 @@ function App() {
 
 
 
-
-
-
-
-
-
-
+{/* *************************************About us ****************************************************/}
           <div id="aboutus" class="basic-1">
               <div class="container">
                   <div class="row">
@@ -191,102 +189,69 @@ function App() {
     
 
 
-
-
-    
-          
-          <div id="features" class="accordion-1">
+ {/* *********************************************features *************************************************/}      
+          <div class="cards-2 bg-gray" id="features">
               <div class="container">
                   <div class="row">
-                      <div class="col-xl-12">
-                          <h2 class="h2-heading">Online service features</h2>
-                          <p class="p-heading">Suspendisse vitae enim arcu. Aliquam convallis risus a felis blandit, at mollis nisi bibendum. Aliquam nec purus at ex blandit posuere nec a odio. Proin lacinia dolor justo</p>
+                      <div class="col-lg-12">
+                          <h2 class="h2-heading">Compare Features</h2>
+                          <p>Choose the plan that fits your needs. You can always start for free.</p>
                       </div> 
-                  </div>   
+                  </div>
+
                   <div class="row">
-                      <div class="col-xl-5">
-                          <div class="accordion" id="accordionExample">
-                              
+                      <div class="col-lg-12">
                           
-                              <div class="accordion-item">
-                                  <div class="accordion-icon">
-                                      <span class="fas fa-tv"></span>
-                                  </div> 
-                                  <div class="accordion-header" id="headingOne">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          Analyse the product and design plan
-                                      </button>
-                                  </div>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                                  </div>
+                          <div class="card">
+                              <img class="quotes" src="assets/images/expeicon.svg" alt="alternative" />
+                              <div class="card-body">
+                                  <div class="testimonial-author">Free</div>
+                                  <p class="testimonial-text">The basics for individuals, organization and schools</p>
+                                  <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
                               </div>
+                              <div class="gradient-floor red-to-blue"></div>
+                          </div>
+                      
                           
-                          
-                              <div class="accordion-item">
-                                  <div class="accordion-icon blue">
-                                      <span class="fas fa-microphone"></span>
-                                  </div> 
-                                  <div class="accordion-header" id="headingTwo">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Find the market opportunities
-                                      </button>
-                                  </div>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                                  </div>
+                          <div class="card">
+                              <img class="quotes" src="assets/images/molviewicon.svg" alt="alternative" />
+                              <div class="card-body">
+                                  <div class="testimonial-author">Molecular Viewer</div>
+                                  <p class="testimonial-text">Generate molecular visualizations either in 3D or 2D of all chemical elements and compounds</p>
+                                  <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
                               </div>
+                              <div class="gradient-floor blue-to-purple"></div>
+                          </div>
+                      
                           
-                          
-                              <div class="accordion-item">
-                                  <div class="accordion-icon purple">
-                                      <span class="fas fa-video"></span>
-                                  </div> 
-                                  <div class="accordion-header" id="headingThree">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Prepare the product launch campaign
-                                      </button>
-                                  </div>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                                  </div>
+                          <div class="card">
+                              <img class="quotes" src="assets/images/libraryicon.svg" alt="alternative" />
+                              <div class="card-body">
+                                  <div class="testimonial-author">Elements/Compound Library</div>
+                                  <p class="testimonial-text">Explore the periodic table, core data and properties of all elements and chemical compounds</p>
+                                  <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
                               </div>
-                          
-                              
-                          
-                              <div class="accordion-item">
-                                  <div class="accordion-icon orange">
-                                      <span class="fas fa-tools"></span>
-                                  </div> 
-                                  <div class="accordion-header" id="headingFour">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                          Evaluate the campaign and adjust
-                                      </button>
-                                  </div>
-                                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                                  </div>
-                              </div>
-                          
-                          </div> 
-                      </div> 
-                      <div class="col-xl-7">
-                          <div class="image-container">
-                              <img class="img-fluid" src="assets/images/features-dashboard.png" alt="alternative"/>
-                          </div> 
+                              <div class="gradient-floor purple-to-green"></div>
+                          </div>
+                                            
                       </div> 
                   </div>
               </div> 
-          </div> 
+          </div>
+
       
       
           
+
+
+
+{/* ***********************Trusted by and slider******************************************* */}
       
           <div class="slider-1">
               <div class="container">
                   <div class="row">
                       <div class="col-lg-12">
-                          <h4>Trusted by over <span class="blue">5000</span> customers worldwide</h4>
+                          <h4>Approved by <span class="blue">500 teachers and The Ministry</span>in Uganda</h4>
                           <hr class="section-divider" />
                       
                           <div class="slider-container">
@@ -324,64 +289,67 @@ function App() {
 
 
 
-
-
-
+{/* *****************************************************contact us **************************************/}
 
           <div id="contact" class="form-1">
               <div class="container">
                   <div class="row">
                       <div class="col-lg-6">
-
                           <div class="text-container">
                               <div class="section-title">Contact Us</div>
                               <h2>Submit the form to Contact Us</h2>
+                              <p>Send us an email by filling out the form</p>
+                              <p>Follow and contact us using our handles below</p>
                             </div>
 
                               
-                  <div class="row">
-                      <div class="col-lg-12">
-                          <div class="social-container">
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-twitter fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-instagram fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-youtube fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                          </div> 
-                      </div> 
-                  </div>
-              </div> 
+                            <div class="footer bg-gray">
+              
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="social-container">
+                                                <span class="fa-stack">
+                                                    <a href="#your-link">
+                                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link">
+                                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link">
+                                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                                        <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link">
+                                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                                        <i class="fab fa-instagram fa-stack-1x"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link">
+                                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                                        <i class="fab fa-youtube fa-stack-1x"></i>
+                                                    </a>
+                                                </span>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </div> 
+                            </div> 
+                    </div> 
 
 
                         
                       
-                      <div class="col-lg-6">
-                      
+                    <div class="col-lg-6">
                           <form>
                               <div class="form-group">
                                   <input type="text" class="form-control-input" placeholder="Name" required />
@@ -403,49 +371,14 @@ function App() {
                       </div> 
                   </div>
               </div> 
-          </div>
-      
-          <div class="footer bg-gray">
-              
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-12">
-                          <div class="social-container">
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-twitter fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-instagram fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                              <span class="fa-stack">
-                                  <a href="#your-link">
-                                      <i class="fas fa-circle fa-stack-2x"></i>
-                                      <i class="fab fa-youtube fa-stack-1x"></i>
-                                  </a>
-                              </span>
-                          </div> 
-                      </div> 
-                  </div>
-              </div> 
           </div> 
+
+
+
+
+
+
+
           <div class="copyright bg-gray">
               <div class="container">
                   <div class="row">
@@ -457,10 +390,10 @@ function App() {
                           </ul>
                       </div> 
                       <div class="col-lg-3 col-md-12 col-sm-12">
-                          <p class="p-small statement">Copyright © <a href="#">Jassa</a></p>
+                          <p class="p-small statement">Copyright © <a href="#">Alozious & Arian</a></p>
                       </div> 
                       <div class="col-lg-3 col-md-12 col-sm-12">
-                          <p class="p-small statement">Distributed by <a href="https://therichpost.com/" target="_blank">Jassa</a></p>
+                          <p class="p-small statement">Distributed by <a href="https://therichpost.com/" target="_blank">Chimptech</a></p>
                       </div> 
                   </div> 
               </div> 
