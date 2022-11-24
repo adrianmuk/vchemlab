@@ -9,6 +9,11 @@ body, p {
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
+.vchemgif{
+	height:130px;
+	width:130px;
+}
+
 h1 {
 	color: #223150;
 	font-weight: 700;

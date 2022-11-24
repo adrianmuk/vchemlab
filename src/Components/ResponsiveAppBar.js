@@ -1,7 +1,9 @@
 import * as React from 'react';
-
+import Home from '../Home';
+import {  useNavigate, Link} from "react-router-dom";
 
 function ResponsiveAppBar() {
+    const navigate = useNavigate()
   return (
     
     <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
@@ -15,7 +17,7 @@ function ResponsiveAppBar() {
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ms-auto navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                            <Link to="../" class="nav-link active" aria-current="page">Home</Link>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Features</a>
