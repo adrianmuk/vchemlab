@@ -5,6 +5,8 @@ import render from "react-dom";
 import ReactDOM from "react-dom/client";
 import Simulator from "./Simulator";
 import Home from "./Home";
+import Mainmenu from './Components/Mainmenu';
+import Loginpage from './Components/Loginpage';
 import vchemgif from "./Assets/chemlab.gif";
 
 
@@ -15,6 +17,8 @@ function App() {
     <Routes>
        <Route path="/" element={<Home />} />
        <Route path="Simulator" element={<Simulator />} />
+       <Route path="Loginpage" element={<Loginpage />} />
+       <Route path='Mainmenu' element={<Mainmenu />} />
     </Routes>
                           
 );

@@ -48,7 +48,7 @@ function Home() {
                           </li>
                       </ul>
                       <span class="nav-item">
-                          <a class="btn-solid-sm" href="#contact">Login</a>
+                          <button class="btn-solid-sm" onClick={()=> navigate('Loginpage')}>Login</button>
                       </span>
                   </div> 
               </div> 
@@ -62,12 +62,13 @@ function Home() {
                               <h1 class="h1-large">Experiment on the go.</h1>
                               <p class="p-large">Simulate chemistry experiments, Visualize chemical processes, bonding, thermo-dynamics, electronic configurations, molecular structure, retrieve properties of chemical elements and balance chemical equations.</p>
                               <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
+                              <button class="btn-solid-lg" onClick={()=> navigate('Mainmenu')}>Login</button>
                           </div>
                           
                       </div> 
                       <div class="col-lg-6 col-xl-7">
                           <div class="image-container">
-                              <img class="img-fluid" src="assets/images/header-image.png" alt="alternative" />
+                              {/* <img class="img-fluid" src="assets/images/header-image.png" alt="alternative" /> */}
                           </div> 
                       </div> 
                   </div> 
@@ -171,7 +172,7 @@ function Home() {
                   <div class="row">
                       <div class="col-lg-6 col-xl-7">
                           <div class="image-container">
-                              <img class="img-fluid" src="assets/images/details-1.png" alt="alternative" />
+                              {/* <img class="img-fluid" src="assets/images/details-1.png" alt="alternative" /> */}
                           </div> 
                       </div> 
                       <div class="col-lg-6 col-xl-5">

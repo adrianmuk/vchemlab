@@ -9,13 +9,13 @@ function Workspace() {
     <div className="workspaceclass">
       <Draggable>
         <div class="draggableclass">
-            <Testubecompo colortop='yellow' colormiddle='rgb(126, 126, 126)' colorbottom='rgb(126, 126, 126)'></Testubecompo>
+            <Testubecompo colortop='rgb(126, 126, 126)' colormiddle='rgb(126, 126, 126)' colorbottom='red'></Testubecompo>
         </div>
       </Draggable>
       <Rotation>
       <Draggable>
         <div class="draggableclass">
-           <Dropper dropcolor='yellow'></Dropper>
+           <Dropper dropcolor='red'></Dropper>
         </div>
       </Draggable>
       </Rotation>

@@ -14,6 +14,21 @@ body, p {
 	width:130px;
 }
 
+.button_mainmenu{
+	text-align: center;
+	margin-top: 200px;
+}
+.menubtn{
+	width: 80px;
+	height: 80px;
+	margin-left: 60px;
+	border-radius: 10px;
+	background-color: white;
+	border-color: #0092ff;
+	box-shadow: 0 4px 8px 0 rgba(236, 147, 147, 0.2), 0 3px 10px 0 rgba(37, 111, 145, 0.671);
+
+}
+
 h1 {
 	color: #223150;
 	font-weight: 700;
