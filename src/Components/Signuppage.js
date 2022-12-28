@@ -1,54 +1,34 @@
 import React, { useState } from "react";
 import '../App.css';
 import {Link, useNavigate} from "react-router-dom";
+import {registerWithEmailAndPassword} from "../firebase";
+import {
+  createUserWithEmailAndPassword,
+  getAuth
+} from "firebase/auth";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 
-class Signuppage extends React.Component{
+function Signuppage() {
 
-  constructor (props) {
-    super(props)
-    this.state = {
-      startDate: new Date()
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.onFormSubmit = this.onFormSubmit.bind(this);
-  }
-  handleChange(date) {
-    this.setState({
-      startDate: date
-    })
-  }
-  onFormSubmit(e) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(this.state.startDate)
-  }
+    setEmail("");
+    setPassword("");
+    const res =await registerWithEmailAndPassword(email, password);
+    
+    if (res.error) setError(res.error);
+  };
 
+  
 
-
-
-
-
-
-  state = {
-    username: '',
-    password: '',
-    Confirm_password: ''
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    // add code here to log in the user using the provided username and password
-  }
-
-  render() {
     return (
       <div>
              <h3 style={{ textAlign: "center", marginTop:"80px" }}>Create your account</h3>
@@ -57,9 +37,9 @@ class Signuppage extends React.Component{
           <div style={{display: "flex", justifyContent: "center", alignItems: "center",}}>
           
           {/* Signup form */}
-          <form onSubmit={this.handleSubmit}>
-            <table>
-          {/* Names */}
+          <form onSubmit={handleSubmit}>
+            {/* <table>
+          ...............Names
             <tr>
               <td>
                 <label className='Signuplabel'>
@@ -76,7 +56,7 @@ class Signuppage extends React.Component{
             </tr>
             <br></br>
 
-          {/* Date and class */}
+          ................Date and class
             <tr>
               <td>
                 <label className='Signuplabel'>
@@ -92,7 +72,7 @@ class Signuppage extends React.Component{
               </td>
             </tr>
             <br></br>
-          {/* School Details*/}
+          ....................School Details
             <tr>
               <td>
                 <label className='Signuplabel'>
@@ -107,25 +87,25 @@ class Signuppage extends React.Component{
               </label>
               </td>
             </tr>
-           </table>
+           </table> */}
                 <br/>
 
 
             {/* Email */}
                 <label className='loginlabel'>
                   <span className='loginspan'>Student Email</span>
-                  <input className='logininput'  type="text" name="username" value={this.state.username} onChange={this.handleChange} />
+                  <input className='logininput'  type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </label>
                 <br/>
-            {/* Passwords */}
+            {/* ...............Passwords
             <table>
               <tr>
-                <td>
+                <td> */}
                 <label className='Signuplabel'>
                   <span className='Signupspan'>Password</span>
-                  <input className='Signupinput'  type="password" name="password" value={this.state.password} onChange={this.handleChange} />
+                  <input className='Signupinput'  type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </label>
-                </td>
+                {/* </td>
                 <td>
                 <label className='Signuplabel'>
                   <span className='Signupspan'>Confirm Password</span>
@@ -133,7 +113,7 @@ class Signuppage extends React.Component{
                 </label>
                 </td>
               </tr>
-            </table>
+            </table> */}
 
                 <br/>
 
@@ -151,7 +131,7 @@ class Signuppage extends React.Component{
     );
   }
 
-}
+
 
 
 export default Signuppage ;

@@ -1,50 +1,53 @@
 import React from 'react';
 import '../App.css';
 import {Link, useNavigate} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { auth, logInWithEmailAndPassword, signInWithGoogle } from "../firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { FirebaseError } from 'firebase/app';
 
-class Loginpage extends React.Component{
-  
+function Loginpage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] =useState(false);
+  const navigate = useNavigate();
 
-  state = {
-    username: '',
-    password: ''
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setEmail("");
+    setPassword("");
+    const res =await logInWithEmailAndPassword(email, password);
+    navigate('Mainmenu')
+    if (res.error) setError(res.error);
+  };
 
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
-  }
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    // add code here to log in the user using the provided username and password
-  }
-
-  render() {
     return (
       <div>
              <h3 style={{ textAlign: "center", marginTop:"80px" }}>Welcome to V-chemlab</h3>
       
   {/* Login form */}
           <div style={{display: "flex", justifyContent: "center", alignItems: "center",}}>
-              <form onSubmit={this.handleSubmit}>
+          {error ? <div>{error}</div> : null}
+              <form onSubmit={handleSubmit}>
            
                 <br/>
                 <label className='loginlabel'>
                   <span className='loginspan'>Username or Email</span>
-                  <input className='logininput'  type="text" name="username" value={this.state.username} onChange={this.handleChange} />
+                  <input className='logininput'  type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </label>
                 <br/>
                 <label className='loginlabel'>
                   <span className='loginspan'>Password</span>
-                  <input className='logininput'  type="password" name="password" value={this.state.password} onChange={this.handleChange} />
+                  <input className='logininput'  type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                   <br></br>
                   <span style={{color:'blue'}}>Forgot password?</span>
                 </label>
                 
                 {/* <span>Forgot Password?</span> */}
-                <button className='loginpbtn'>Log In</button>
+                <button className='loginpbtn' type='submit' value='submit'>Log In</button>
               </form>      
           </div>
 
@@ -78,15 +81,10 @@ class Loginpage extends React.Component{
                 <span style={{marginTop: '5px'}}>Continue with Microsoft</span>
               </button>
           </div>
-
-
-
           
       </div>
     );
   }
-
-}
 
 
 export default Loginpage ;
