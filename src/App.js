@@ -8,6 +8,7 @@ import Home from "./Home";
 import Mainmenu from './Components/Mainmenu';
 import Loginpage from './Components/Loginpage';
 import vchemgif from "./Assets/chemlab.gif";
+import Signuppage from './Components/Signuppage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
        <Route path="Simulator" element={<Simulator />} />
        <Route path="Loginpage" element={<Loginpage />} />
        <Route path='Mainmenu' element={<Mainmenu />} />
+       <Route path='Signuppage' element={<Signuppage />}/>
     </Routes>
                           
 );

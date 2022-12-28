@@ -17,7 +17,7 @@ function Home() {
       <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
               <div class="container">
               
-                  <img src={vchemgif} class="vchemgif" />
+                  {/* <img src={vchemgif} class="vchemgif" /> */}
                   <a class="navbar-brand logo-text" href="#">V-Chemlab</a> 
                   <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -61,6 +61,7 @@ function Home() {
                           <div class="text-container">
                               <h1 class="h1-large">Experiment on the go.</h1>
                               <p class="p-large">Simulate chemistry experiments, Visualize chemical processes, bonding, thermo-dynamics, electronic configurations, molecular structure, retrieve properties of chemical elements and balance chemical equations.</p>
+                              <button class="btn-solid-sm" onClick={()=> navigate('Loginpage')}>Login</button>
                               <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
                               <button class="btn-solid-lg" onClick={()=> navigate('Mainmenu')}>Login</button>
                           </div>
@@ -68,7 +69,7 @@ function Home() {
                       </div> 
                       <div class="col-lg-6 col-xl-7">
                           <div class="image-container">
-                              {/* <img class="img-fluid" src="assets/images/header-image.png" alt="alternative" /> */}
+                            <img class="img-fluid" src="assets/images/header-image.png" alt="alternative" />
                           </div> 
                       </div> 
                   </div> 
@@ -172,7 +173,7 @@ function Home() {
                   <div class="row">
                       <div class="col-lg-6 col-xl-7">
                           <div class="image-container">
-                              {/* <img class="img-fluid" src="assets/images/details-1.png" alt="alternative" /> */}
+                              <img class="img-fluid" src="assets/images/details-1.png" alt="alternative" />
                           </div> 
                       </div> 
                       <div class="col-lg-6 col-xl-5">

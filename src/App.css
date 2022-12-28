@@ -101,8 +101,39 @@
   border-radius: 3px;
   background-color: rgb(10, 80, 51);
   color: white;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
+.contwithgoogle {
+  width: 300px;
+  height: 42px;
+  border-radius: 1px;
+  border-color: rgba(190, 188, 188, 0.918);
+  background-color: white;
+  color: black;
+  margin-top: 10px;  
+}
 
+.Signuplabel{
+  display: block;
+  position: relative;
+  font-size: 13px;
+  color: rgb(10, 80, 51);
+}
 
+.Signupspan{
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background: white;
+  padding: 0 4px;
+}
+
+.Signupinput{
+  border: 1px solid rgb(10, 80, 51);
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+}
