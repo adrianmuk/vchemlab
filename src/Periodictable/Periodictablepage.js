@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import './ComponentStyles.css'
 import AllElements from './AllElements';
 import { getBackground } from './Util';
