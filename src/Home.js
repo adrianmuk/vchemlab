@@ -64,6 +64,7 @@ function Home() {
                               <button class="btn-solid-sm" onClick={()=> navigate('Loginpage')}>Login</button>
                               <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
                               <button class="btn-solid-lg" onClick={()=> navigate('Mainmenu')}>Login</button>
+                              <button class="btn-solid-lg" onClick={()=> navigate('Periodictablepage')}>Periodic Table</button>
                           </div>
                           
                       </div> 

@@ -9,6 +9,7 @@ import Mainmenu from './Components/Mainmenu';
 import Loginpage from './Components/Loginpage';
 import vchemgif from "./Assets/chemlab.gif";
 import Signuppage from './Components/Signuppage';
+import Periodictablepage from './Periodictable/Periodictablepage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
        <Route path="Loginpage" element={<Loginpage />} />
        <Route path='Mainmenu' element={<Mainmenu />} />
        <Route path='Signuppage' element={<Signuppage />}/>
+       <Route path='Periodictablepage' element={<Periodictablepage />}/>
     </Routes>
                           
 );
