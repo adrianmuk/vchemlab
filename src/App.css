@@ -40,35 +40,6 @@
 }
 
 
-.sidebarsidebar{
-  position: absolute;
-  height: 100%;
-  width: 200px;
-  background-color: #61dafb;
-}
-
-.topbar{
-  margin-top: -22px;
-}
-
-.workspaceclass{
-  margin-left: 200px;
-  margin-top: 0px;
-  height: auto;
-  width: auto;
-  background-color: rgb(126, 126, 126);
-}
-
-.draggableclass{
-  height: 160mm;
-  width: 50mm;
-}
-
-
-
-
-
-
 /* LOGIN PAGE */
 
 .loginlabel {
@@ -136,4 +107,153 @@
   width: 150px;
   height: 35px;
   border-radius: 10px;
+}
+
+
+
+
+
+
+/* Simulator Styling */
+.Simulato_lower_row{
+  display: flex;
+}
+
+/* NAVIGATION BAR WORKSPACE */
+.ResNavBarWorkspace{
+  background-color: white;
+  height: 50px;
+  margin-top: -26px;
+  display: flex;
+}
+
+.logotext{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+.workspaceTxt{
+  font-size: 18px;
+  padding-left: 100px;
+  padding-top:10px;
+}
+
+
+/* SIDEBAR LEFT */
+.sidebarsidebar{
+  z-index: 1;
+  position: absolute;
+  height: 540px;
+  width: 200px;
+  background-color: #61dafb;
+}
+
+
+
+
+
+
+
+/* WORKSPACE CENTER */
+.workspaceclass{
+  margin-left: 200px;
+  margin-top: 0px;
+  height: 540px;
+  width: 850px;
+  background-color: rgb(126, 126, 126);
+}
+
+.workspaceandtile{
+  display: flex;
+}
+
+
+.Inputfieldcontainer{
+  padding-top: 10px;
+
+}
+
+.inputfield{
+  border-radius: 10px;
+  border-color: white;
+}
+
+.draggableclass{
+  z-index: -1;
+  height: 160mm;
+  width: 50mm;
+}
+
+
+.inputdesign{
+  margin-left: 180px;
+  z-index: 1;
+}
+
+.reactbut{
+  background-color: rgba(212, 81, 147, 0.719);
+  margin-left: 10px;
+  border-color: rgba(255, 0, 128, 0.719);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* InstructNotebookTile */
+.InstructNotebookTile{
+  background-color: #ffffff;
+  width: 294px;
+  height: 540px;
+  border: 2px solid #0e4127c2;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.Instructions{
+  border: 2px solid white;
+  background-color: #113f28c2;
+  color: white;
+  width: 280px;
+  margin-left: 5px;
+  border-radius: 8px;
+}
+
+.Resultslog{
+  border: 2px solid white;
+  background-color: #195e3cbd;
+  color: white;
+  width: 280px;
+  margin-left: 5px;
+  border-radius: 8px;
+}
+
+.Notebook{
+  border: 2px solid white;
+  background-color: #289b62c2;
+  color: white;
+  width: 280px;
+  margin-left: 5px;
+  border-radius: 8px;
+}
+
+.textAreaInst{
+  width: 275px;
+  border-radius: 8px;
+  margin-top: 3px;
+  height: 100px;
+}
+
+.Simfooter{
+  background-color: rgba(255, 166, 0, 0.726);
+  color: rgb(68, 56, 3);
 }

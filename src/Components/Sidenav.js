@@ -18,10 +18,7 @@ import {FaGem, FaHeart} from 'react-icons/fa';
 export default function Sidenav() {
   return(
     <div class='sidebarsidebar'>
-      <ProSidebarProvider>
-         
-          <h2> Vchemlab</h2>
-       
+      <ProSidebarProvider>     
         <sidebarContext>
           <Menu>
             <SubMenu label="Apparatus">

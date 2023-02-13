@@ -7,9 +7,9 @@ export default class Testubecompo extends React.Component{
     return(
 
       <svg
-      width="50mm"
-      height="160mm"
-      viewBox="0 0 150 107"
+      width="35mm"
+      height="150mm"
+      viewBox="0 0 150 150"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"
       

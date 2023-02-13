@@ -9,6 +9,13 @@ import vchemgif from "./Assets/chemlab.gif";
 
 function Home() {
     const navigate = useNavigate()
+    const balance_equation = () => {
+        window.location.replace('http://localhost:8502/');
+      };
+
+    const mol_viewer = () => {
+        window.location.replace('http://localhost:8501/');
+      };
   return (
     
   <div className="App">
@@ -61,10 +68,9 @@ function Home() {
                           <div class="text-container">
                               <h1 class="h1-large">Experiment on the go.</h1>
                               <p class="p-large">Simulate chemistry experiments, Visualize chemical processes, bonding, thermo-dynamics, electronic configurations, molecular structure, retrieve properties of chemical elements and balance chemical equations.</p>
-                              <button class="btn-solid-sm" onClick={()=> navigate('Loginpage')}>Login</button>
                               <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
-                              <button class="btn-solid-lg" onClick={()=> navigate('Mainmenu')}>Login</button>
-                              <button class="btn-solid-lg" onClick={()=> navigate('Periodictablepage')}>Periodic Table</button>
+                              {/* <button class="btn-solid-lg" onClick={()=> navigate('Mainmenu')}>Login</button> */}
+                              
                           </div>
                           
                       </div> 
@@ -109,7 +115,7 @@ function Home() {
                               <div class="card-body">
                                   <div class="testimonial-author">Molecular Viewer</div>
                                   <p class="testimonial-text">Generate molecular visualizations either in 3D or 2D of all chemical elements and compounds</p>
-                                  <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
+                                  <button class="btn-solid-lg" onClick={mol_viewer}>Try it now</button>
                               </div>
                               <div class="gradient-floor blue-to-purple"></div>
                           </div>
@@ -120,7 +126,8 @@ function Home() {
                               <div class="card-body">
                                   <div class="testimonial-author">Elements/Compound Library</div>
                                   <p class="testimonial-text">Explore the periodic table, core data and properties of all elements and chemical compounds</p>
-                                  <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
+                                  {/* <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button> */}
+                                  <button class="btn-solid-lg" onClick={()=> navigate('Periodictablepage')}>Try it now</button>
                               </div>
                               <div class="gradient-floor purple-to-green"></div>
                           </div>
@@ -143,7 +150,7 @@ function Home() {
                               <div class="card-body">
                                   <div class="testimonial-author">Balance equation</div>
                                   <p class="testimonial-text">Enter your reactants, reagents, conditions to predict possible reactions and balance equations</p>
-                                  <button class="btn-solid-lg" onClick={()=> navigate('Simulator')}>Try it now</button>
+                                  <button class="btn-solid-lg" onClick={balance_equation}>Try it now</button>
                               </div>
                               <div class="gradient-floor blue-to-purple"></div>
                           </div>
